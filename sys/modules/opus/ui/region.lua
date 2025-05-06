@@ -11,7 +11,7 @@
 -- https://opensource.org/licenses/MIT
 --
 -- Some comments have been removed to reduce file size, see:
--- https://github.com/technosaurus/tekui/blob/master/etc/region.lua
+-- https://github.com/technosaurus/tekui/blob/main/etc/region.lua
 -- for the full source
 
 local insert = table.insert

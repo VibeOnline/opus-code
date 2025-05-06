@@ -1,5 +1,5 @@
 
--- see: https://github.com/luarocks/luarocks/blob/master/src/luarocks/tools/tar.lua
+-- see: https://github.com/luarocks/luarocks/blob/main/src/luarocks/tools/tar.lua
 -- A pure-Lua implementation of untar (unpacking .tar archives)
 local Util = require('opus.util')
 

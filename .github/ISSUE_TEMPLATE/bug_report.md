@@ -27,4 +27,4 @@ If applicable, add screenshots to help explain your problem.
 What version of Minecraft, CC:Tweaked, Plethora (if applicable), Opus branch are you using
  - MC : [e.g. 1.12.2]
  - CC:T : [e.g. 1.88]
- - Opus : [e.g. develop-1.8]
+ - Opus : [e.g. develop]

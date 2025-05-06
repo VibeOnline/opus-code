@@ -1,5 +1,5 @@
 -- stack trace by SquidDev (MIT License)
--- https://raw.githubusercontent.com/SquidDev-CC/mbs/master/lib/stack_trace.lua
+-- https://raw.githubusercontent.com/SquidDev-CC/mbs/main/lib/stack_trace.lua
 
 local type = type
 local debug_traceback = type(debug) == "table" and type(debug.traceback) == "function" and debug.traceback

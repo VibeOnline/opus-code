@@ -4,7 +4,7 @@ local global_module_name = 'json'
 
 --[==[
 NOTE: Modified to reduce file size.
-See https://github.com/LuaDist/dkjson/blob/master/dkjson.lua
+See https://github.com/LuaDist/dkjson/blob/main/dkjson.lua
 for full version.
 
 David Kolf's JSON module for Lua 5.1/5.2
@@ -18,7 +18,7 @@ domain 'dkolf.de'.
 
 Copyright (C) 2010-2014 David Heiko Kolf
 
-Refer to license located at https://github.com/LuaDist/dkjson/blob/master/dkjson.lua
+Refer to license located at https://github.com/LuaDist/dkjson/blob/main/dkjson.lua
 
 --]==]
 

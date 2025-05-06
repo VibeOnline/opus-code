@@ -56,8 +56,8 @@ end
 
 function Packages:downloadList()
 	local packages = {
-		[ 'develop-1.8' ] = 'https://raw.githubusercontent.com/VibeOnline/opus-code-apps/develop-1.8/packages.list',
-		[ 'master-1.8' ] = 'https://raw.githubusercontent.com/VibeOnline/opus-code-apps/master-1.8/packages.list',
+		[ 'develop' ] = 'https://raw.githubusercontent.com/VibeOnline/opus-code-apps/develop/packages.list',
+		[ 'main' ] = 'https://raw.githubusercontent.com/VibeOnline/opus-code-apps/main/packages.list',
 	}
 
 	if packages[_G.OPUS_BRANCH] then

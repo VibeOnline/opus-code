@@ -1,6 +1,6 @@
 # Opus OS for computercraft
 
-<img src="https://github.com/VibeOnline/opus-code-wiki/blob/master/assets/images/opus.gif?raw=true" width="540" height="360">
+<img src="https://github.com/VibeOnline/opus-code-wiki/blob/main/assets/images/opus.gif?raw=true" width="540" height="360">
 
 ## Credit
 * This is a modified version of Kepler155c's ComputerCraft OS Software

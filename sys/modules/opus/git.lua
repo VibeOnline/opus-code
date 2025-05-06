@@ -15,7 +15,7 @@ function git.list(repository)
 
 	local user = table.remove(t, 1)
 	local repo = table.remove(t, 1)
-	local branch = table.remove(t, 1) or 'master'
+	local branch = table.remove(t, 1) or 'main'
 	local path
 
 	if not Util.empty(t) then
