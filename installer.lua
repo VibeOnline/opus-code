@@ -6,9 +6,8 @@ local os      = _G.os
 
 function require(src)
 	src = src:gsub(".", "/") .. ".lua"
+	print(src)
 	local url ='https://raw.githubusercontent.com/VibeOnline/opus-code/refs/heads/main/sys/modules/opus/' .. src
-
-	print(url)
 	return load(http.get(url).readAll(), src, nil, _ENV)()
 end
 
