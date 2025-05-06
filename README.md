@@ -19,5 +19,5 @@
 
 ## Install
 ```
-pastebin run Z9P31KUt
+pastebin run CNDfeZJ1
 ```
