@@ -28,7 +28,11 @@ return function(env)
 	end
 
 	local function urlSearcher(modname)
-		local fname = modname:gsub("opus.", ""):gsub('%.', '/') .. '.lua'
+        if modname:sub(1, 5) == "opus." then
+            modname = modname:sub(5, #modname)
+        end
+
+		local fname = modname:gsub('%.', '/') .. '.lua'
 
 		if fname:sub(1, 1) ~= '/' then
 			for entry in string.gmatch(env.package.upath, "[^;]+") do
