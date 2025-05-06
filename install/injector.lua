@@ -61,6 +61,8 @@ return function(env)
 	}
 
 	function env.require(modname)
+        print(modname)
+
 		for _,searcher in ipairs(env.package.loaders) do
 			local fn, msg = searcher(modname)
 			if fn then
