@@ -30,10 +30,11 @@ return function(env)
 	local function urlSearcher(modname)
 		local fname = modname:gsub('%.', '/') .. '.lua'
 
+        print(fname)
+
 		if fname:sub(1, 1) ~= '/' then
 			for entry in string.gmatch(env.package.upath, "[^;]+") do
 				local url = entry .. '/' .. fname
-                print(url)
 				local c = loadUrl(url)
 				if c then
 					return load(c, modname, nil, env)
