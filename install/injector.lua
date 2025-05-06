@@ -28,8 +28,8 @@ return function(env)
 	end
 
 	local function urlSearcher(modname)
-        if modname:sub(1, 5) == "opus." then
-            modname = modname:sub(5, #modname)
+        if modname:sub(1, 6) == "opus." then
+            modname = modname:sub(6, #modname)
         end
 
 		local fname = modname:gsub('%.', '/') .. '.lua'
