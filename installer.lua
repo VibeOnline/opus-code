@@ -4,12 +4,13 @@ local http    = _G.http
 local install = _ENV.install
 local os      = _G.os
 
-local url ='https://raw.githubusercontent.com/VibeOnline/opus-code/refs/heads/main/sys/modules/opus/injector.lua'
-local injector = load(http.get(url).readAll(), 'injector.lua', nil, _ENV)()
+function require(src)
+	src = src:gsub(".", "/") .. ".lua"
+	local url ='https://raw.githubusercontent.com/VibeOnline/opus-code/refs/heads/main/sys/modules/opus/' .. src
+	return load(http.get(url).readAll(), src, nil, _ENV)()
+end
 
 -- install a require that only searches github
-injector(_ENV)
-
 local BulkGet = require('opus.bulkget')
 local Git     = require('opus.git')
 local UI      = require('opus.ui')
