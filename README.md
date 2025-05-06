@@ -19,5 +19,5 @@
 
 ## Install
 ```
-pastebin run 5hKtE8Kr
+pastebin run NZc3SAtX
 ```
