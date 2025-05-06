@@ -10,10 +10,10 @@ local injector = load(http.get(url).readAll(), 'injector.lua', nil, _ENV)()
 -- install a require that only searches github
 injector(_ENV)
 
-local BulkGet = require('bulkget')
-local Git     = require('git')
-local UI      = require('ui')
-local Util    = require('util')
+local BulkGet = require('opus.bulkget')
+local Git     = require('opus.git')
+local UI      = require('opus.ui')
+local Util    = require('opus.util')
 
 local currentFile = ''
 local currentProgress = 0
