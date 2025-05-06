@@ -19,5 +19,5 @@
 
 ## Install
 ```
-pastebin run UzGHLbNC
+pastebin run Z9P31KUt
 ```
