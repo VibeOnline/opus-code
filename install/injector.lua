@@ -33,6 +33,7 @@ return function(env)
 		if fname:sub(1, 1) ~= '/' then
 			for entry in string.gmatch(env.package.upath, "[^;]+") do
 				local url = entry .. '/' .. fname
+                print(url)
 				local c = loadUrl(url)
 				if c then
 					return load(c, modname, nil, env)
@@ -61,8 +62,6 @@ return function(env)
 	}
 
 	function env.require(modname)
-        print(modname)
-
 		for _,searcher in ipairs(env.package.loaders) do
 			local fn, msg = searcher(modname)
 			if fn then
