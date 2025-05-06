@@ -20,7 +20,7 @@ end
 -- Add require and package to the environment
 return function(env)
 	local function loadedSearcher(modname)
-			if env.package.loaded[modname] then
+		if env.package.loaded[modname] then
 			return function()
 				return env.package.loaded[modname]
 			end
@@ -63,6 +63,8 @@ return function(env)
 	}
 
 	function env.require(modname)
+        print(modname)
+
 		for _,searcher in ipairs(env.package.loaders) do
 			local fn, msg = searcher(modname)
 			if fn then
