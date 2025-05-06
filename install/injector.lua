@@ -28,9 +28,9 @@ return function(env)
 	end
 
 	local function urlSearcher(modname)
-        print(modname:sub(1, 6))
+        print(modname:sub(1, 5))
 
-        if modname:sub(1, 6) == "opus." then
+        if modname:sub(1, 5) == "opus." then
             modname = modname:sub(6, #modname)
         end
 
