@@ -4,7 +4,7 @@ local http    = _G.http
 local install = _ENV.install
 local os      = _G.os
 
-local url ='https://raw.githubusercontent.com/VibeOnline/opus-code/refs/heads/main/install/injector.lua'
+local url ='https://raw.githubusercontent.com/VibeOnline/opus-code/refs/heads/main/sys/modules/opus/injector.lua'
 local injector = load(http.get(url).readAll(), 'injector.lua', nil, _ENV)()
 
 -- install a require that only searches github
